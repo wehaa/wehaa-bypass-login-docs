@@ -1,6 +1,3 @@
----
-title: Wehaa Bypass Login — WordPress Plugin Documentation (v1.3.5)
----
 
 # Wehaa Bypass Login — WordPress Plugin Documentation (v1.3.5)
 
