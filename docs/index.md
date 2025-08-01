@@ -1,3 +1,6 @@
+---
+title: Wehaa Bypass Login — WordPress Plugin Documentation (v1.3.5)
+---
 
 # Wehaa Bypass Login — WordPress Plugin Documentation (v1.3.5)
 
@@ -135,6 +138,43 @@ With options:
 **Parameters**: `mode`, `site_id`, `label`, `class`.
 
 ---
+
+
+---
+
+---
+
+## WordPress Theme Builder (Header) Implementation (Elementor)
+
+![Header images with membership visibility in Elementor](./assets/bypass-elementor.png)
+
+**Where:** **Appearance → Theme Builder → Main Store Header → Edit**
+
+Add **two Image widgets** with the following configuration:
+
+1. **Image A — Digital Edition / Bypass**
+   - **Link (Custom URL):** `/wehaa-bypass/?mode=all`
+   - **Membership visibility:** **Show this widget to… _All members_** (logged‑in users)
+   - **Alt text:** `Digital Edition`
+   - **Target:** Same window/tab
+
+2. **Image B — My Account (for non‑members)**
+   - **Link (Custom URL):** `/my-account/`
+   - **Membership visibility:** **Show this widget to… _Non members_** (logged‑out visitors)
+   - **Alt text:** `My Account`
+   - **Target:** Same window/tab
+
+**Notes**
+- Replicate both images in the **mobile header** template if your theme separates desktop/mobile headers.
+- Keep image assets optimized (≤100 KB) to avoid layout shift and page delays.
+- If your membership plugin labels differ, map them as: _members = logged‑in users_, _non members = logged‑out visitors_.
+
+**Verify**
+- Logged **in**: the **Digital Edition** image is visible and links to `/wehaa-bypass/?mode=all`.
+- Logged **out**: the **My Account** image is visible and links to `/my-account/`.
+- Check key templates (Home, Shop, Blog) if the header is template‑specific.
+
+_Reference staging site:_ `https://outdoornewscom.bigscoots-staging.com/`
 
 ## Security Features
 
