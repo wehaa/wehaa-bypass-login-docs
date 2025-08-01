@@ -24,7 +24,7 @@ title: Wehaa Bypass Login — WordPress Plugin Documentation (v1.3.5)
 
 | Section | Field | Value |
 |---|---|---|
-| **API Configuration** | **API Base URL** | `https://mndigitaledition.outdoornews.com/api/` |
+| **API Configuration** | **API Base URL** | `https://mndigitaledition.outdoornews.com/api/`<br><sub>(Paste the API Base URL provided by Wehaa — keep it secret)</sub> |
 |  | **Service Account Token** | *(Paste the token provided by Wehaa — keep it secret)* |
 | **Generation Behavior** | **Default Token Mode** | **All-sites** |
 |  | **Default Site ID** | *(Leave empty)* |
@@ -66,22 +66,8 @@ The **Wehaa Bypass Login** plugin integrates WordPress with the Django **NPaper*
 ### API Configuration
 
 **Base URL** (`base_url`)  
-- The base URL of your Django NPaper API.  
-- Example: `https://your-npaper-api.com`  
-- **Required**
-
-**Service Account Token** (`service_token`)  
-
-> ⚠️ **Secure Access for Client**  
-> Use the following one-time secret to retrieve the **Service Account Token** securely, then paste it into **WordPress → Settings → Bypass Login → Service Account Token**. Do **not** commit the token to Git or share it by email.
->
-> - **Short link:** https://yopass.se/#/s/adfaa0e5-fc8f-4710-9a59-4335f251a8c6  
-> - **Decryption key:** `sIqbeEYVqYkhuk71jkP2Ci`
->
-> After configuration, consider deleting this section from the public page.
-
-- Token from Django for authentication.  
-- **Keep secret** — never expose in client-side code.  
+- **Use exactly:** `https://mndigitaledition.outdoornews.com/api/`  
+- *(Paste the API Base URL provided by Wehaa — keep it secret)*  
 - **Required**
 
 ### Generation Behavior
